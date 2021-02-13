@@ -1,0 +1,253 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font: 1em/1.5 Arial, Helvetica, sans-serif;
+    background: #BDD2D2;
+}
+
+/*Global*/ 
+
+.container{
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.btn{
+    color: #ffffff;
+    height: 2.3em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border: none;
+    background: #D24C86;
+}
+
+.btn:hover{
+    background: #cccccc;
+}
+
+.dark{
+    padding: 1em;
+    background: #666360;
+    color: #ffffff;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+/*Header*/ 
+
+header{
+    background: #103352;
+    color: #ffffff;
+    min-height: 70px;
+    border-bottom:#A6212A 0.3em solid;
+    padding: 3em;
+}
+
+header a{
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+header ul{
+    padding: 0;
+    margin: 0;
+}
+
+header li{
+    float: left;
+    padding: 0 0.2em 0 0.2em;
+    display: inline;
+}
+
+header .logo{
+    float: left;
+    /*padding: 1.5em;*/
+}
+
+header .logo h1{
+    margin: 0;
+    
+}
+
+header nav{
+    float: right;
+    margin: 1em 1em 1em 0;
+    
+}
+
+header nav li{
+    /*padding: 1.5em;*/
+}
+
+header .span-logo, header .highlight-li a{
+    font-weight: bold;
+    color: #D24E9D;
+}
+
+header a:hover{
+    font-weight: bold;
+    color: #cccccc;
+}
+
+/* middle container*/ 
+
+#middle-container{
+    min-height: 400px;
+       
+}
+
+div#login-img{
+    float: left;
+    width: 30%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+#center{
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+#center h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#center p{
+    font-size: 1.2em;
+}
+
+/* later container */
+
+#later-container{
+    padding: 1em;
+    color: #ffffff;
+    background: #2F3A4D;
+}
+
+#later-container h1{
+    float: left;
+}
+
+#later-container form{
+    float: right;
+    margin-top: 1em;
+}
+
+ form input:hover{
+          background: #aba7b9;
+          color: #ffffff;
+          font-size: ;
+}
+
+#later-container input[type="email"]{
+    padding: 0.3em;
+    height: 1.23em;
+    width: 250px;
+}
+video{
+    max-height: 700px;
+    opacity: 1;
+    z-index: -1;
+    width: 100%;
+    
+}
+
+/* image container */
+
+#img-container{
+    margin-top: 20px;
+}
+
+#img-container .img-box{
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+#img-container .img-box img{
+    width: 200px;
+}
+
+/* side bar*/
+
+aside#side-bar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#side-bar .health-tips input, aside#side-bar .health-tips textarea{
+    width: 90%;
+    padding: 0.3em;
+}
+
+/*main page*/ 
+
+article#main-page{
+    float: left;
+    width: 65%;
+}
+
+/*product page*/
+
+ul#Services li{
+   list-style: none;
+   border: #cccccc solid 1px;
+   padding: 1em;
+   margin-bottom: 5px;
+   background:#EEEBF7;
+   
+}
+
+/*footer section */
+
+footer{
+    color: #ffffff;
+    padding: 1em;
+    margin-top: 1em;
+    text-align: center;
+    background: #262621;
+}
+
+
+@media(max-width: 768px){
+    header .main-container, 
+    header nav, header nav li,
+    #later-container h1,
+    #img-container .img-box, #later-container form,
+    article#main-page, aside#side-bar, div#login-img{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    header{
+        padding: 1.2em;
+    }
+
+    #middle-container h1{
+        margin-top: 40px;
+    }
+
+    #later-container button, .health-tips button{
+        display: block;
+        width: 100%;
+    }
+    #later-container form input[type="email"], .health-tips input,
+     .health-tips textarea{
+        width: 100%;
+        margin-bottom: 0.3em;
+    }
+}
